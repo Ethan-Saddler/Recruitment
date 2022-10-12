@@ -16,14 +16,13 @@ public class Catchphrase {
     }
     public String toString() {
         String newString;
-        newString = String.format("%s! Stats are increased by %f%.", catchphrase, statIncrease);
+        newString = String.format("%s! Stats are increased by %.2f%.", catchphrase, statIncrease);
         return newString;
     }
     public double getStatIncrease() {
         return this.statIncrease;
     }
-    public String getCatchphrase () {
+    public String getCatchphrase() {
         return this.catchphrase;
     }
-    
 }
