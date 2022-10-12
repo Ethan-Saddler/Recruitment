@@ -31,14 +31,12 @@ public class SuperheroRecruit {
         if (intelligence > 0) {
             this.intelligence = intelligence;
         }
+    }
     public SuperheroRecruit(SuperheroRecruit hero) {
-        this.name = hero.name;
-        this.speed = hero.speed;
-        this.strength = hero.strength;
-        this.intelligence = hero.intelligence;
+        this(hero.name, hero.speed, hero.strength, hero.intelligence);
     }
     public double powerScaling() {
-        double power = speed + strength + intelligence;
+        double power = (speed + strength + intelligence) / 3;
         return power;
     }
     public String toString() {
